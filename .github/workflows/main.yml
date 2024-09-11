@@ -23,6 +23,5 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          file: Dockerfile.ci
           tags: ${{ vars.DOCKERHUB_USERNAME }}/alist:latest
           platforms: linux/arm64,linux/amd64
